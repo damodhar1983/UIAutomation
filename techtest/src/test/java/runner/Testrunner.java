@@ -12,17 +12,16 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-features = "src/test/java/features",
-glue= {"seleniumgluecode"},
-plugin = { "pretty", "html:target/htmlreports" },
-//plugin = { "com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"}, 
-monochrome = true
+	features = "src/test/java/features",
+	glue= {"seleniumgluecode"},
+	plugin = { "pretty", "html:target/htmlreports" }, 
+	monochrome = true
 )
 
 public class Testrunner {
 	@AfterClass
     public static void writeExtentReport() {
-//        Reporter.loadXMLConfig(new File("config/report.xml"));        
+               
     
     }
 

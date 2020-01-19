@@ -44,16 +44,14 @@ public class Test {
     	numberplate.click();
     	String actualtitle=driver.getTitle();    	
     	String expectedtitle="Apply for a number plate | Service NSW";
+    	//verify if the title is matched
     	if(actualtitle.equalsIgnoreCase(expectedtitle))
-			System.out.println("Title Matched");
+			System.out.println("Title Matched");    	
 		else {
 			System.out.println("Title didn't match");
 		}
 			
 		}
-			
-    	
-    	
     
     @When("^Click on Locate us button$")
     public void click_on_locate_button() throws Throwable {
@@ -62,24 +60,24 @@ public class Test {
     	findlocationslink.click();    	
     	
     }
-    @When("^Enter suburb Sydney 2000$")
-    public void enter_suburb_sydney() throws Throwable {
+    @When("^Enter suburb  ([^\"]*)$")
+    public void enter_suburb_sydney(String suburb) throws Throwable {
     	//Enter Suburb
     	WebElement locatortext = driver.findElement(By.id("locatorTextSearch"));
-    	locatortext.sendKeys("Sydney 2000");
+    	locatortext.sendKeys(suburb);
     	locatortext.sendKeys(Keys.ENTER);    	 
     }    
     
-    @Then("^Select the service center ([^\"]*)e$")
+    @Then("^Select the service center ([^\"]*)$")
     public void select_the_service_center(String servicecenter) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
-    	//click on  required service center
-    	String requiredservicecenter=servicecenter + "e";
-    	System.out.println(requiredservicecenter);
+    	//click on  required service center    	
+    	
     	WebDriverWait webdriverwait=new WebDriverWait(driver,10);
-    	webdriverwait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText(requiredservicecenter)));
-    	WebElement servicecenterelement = driver.findElement(By.linkText(requiredservicecenter));
+    	webdriverwait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText(servicecenter)));
+    	WebElement servicecenterelement = driver.findElement(By.linkText(servicecenter));
     	servicecenterelement.click(); 
+    	driver.close();
     };
     
        

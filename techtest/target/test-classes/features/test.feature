@@ -6,10 +6,11 @@ Feature: Login Feature
     Given navigate to nsw service center url
     When Search for Apply for a number plate
     And Click on Locate us button
-    And Enter suburb Sydney 2000
+    And Enter suburb  <suburb>
     Then Select the service center <servicecenter>
     
    Examples:   
-	  | servicecenter | 
-	  | Marrickville Service Centre |
+	  |suburb 		 | servicecenter | 
+	  |Sydney 2000 | Marrickville Service Centre |
+	  |Sydney Domestic Airport 2020|Rockdale Service Centre|
 	    

@@ -22,13 +22,13 @@ Install java ,Maven , IDE( Eg. eclipse)
 
 ## Running the tests
 
-clone the repository from the below git url
+clone the repository from the below git url and store in local system.
 
 https://github.com/damodhar1983/techtest.git
 
 1.Open  command prompt
 
-2.Open the command prompt and cd until the project root directory.
+2.Open the command prompt and cd(change directory) until the project root directory.
 
 3.Since it’s a Maven project and  have added Cucumber in test scope dependency and all features are also added in src/test packages,
 

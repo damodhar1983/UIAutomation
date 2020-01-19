@@ -22,6 +22,10 @@ Install java ,Maven , IDE( Eg. eclipse)
 
 ## Running the tests
 
+clone the repository from the below git url
+
+https://github.com/damodhar1983/techtest.git
+
 1.Open  command prompt
 
 2.Open the command prompt and cd until the project root directory.

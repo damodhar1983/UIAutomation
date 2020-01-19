@@ -115,21 +115,21 @@ formatter.match({
   "location": "Test.navigate_to_nsw_service_center()"
 });
 formatter.result({
-  "duration": 7947038014,
+  "duration": 12154725223,
   "status": "passed"
 });
 formatter.match({
   "location": "Test.search_for_apply_for_numberplate()"
 });
 formatter.result({
-  "duration": 5572975626,
+  "duration": 4306861360,
   "status": "passed"
 });
 formatter.match({
   "location": "Test.click_on_locate_button()"
 });
 formatter.result({
-  "duration": 2188005951,
+  "duration": 2281446791,
   "status": "passed"
 });
 formatter.match({
@@ -142,7 +142,7 @@ formatter.match({
   "location": "Test.enter_suburb_sydney(String)"
 });
 formatter.result({
-  "duration": 1373803014,
+  "duration": 232925906,
   "status": "passed"
 });
 formatter.match({
@@ -155,7 +155,7 @@ formatter.match({
   "location": "Test.select_the_service_center(String)"
 });
 formatter.result({
-  "duration": 4641048547,
+  "duration": 4603486730,
   "status": "passed"
 });
 formatter.scenario({
@@ -201,21 +201,21 @@ formatter.match({
   "location": "Test.navigate_to_nsw_service_center()"
 });
 formatter.result({
-  "duration": 6694597392,
+  "duration": 8389546994,
   "status": "passed"
 });
 formatter.match({
   "location": "Test.search_for_apply_for_numberplate()"
 });
 formatter.result({
-  "duration": 4920176823,
+  "duration": 3281107178,
   "status": "passed"
 });
 formatter.match({
   "location": "Test.click_on_locate_button()"
 });
 formatter.result({
-  "duration": 3366360439,
+  "duration": 2629706016,
   "status": "passed"
 });
 formatter.match({
@@ -228,7 +228,7 @@ formatter.match({
   "location": "Test.enter_suburb_sydney(String)"
 });
 formatter.result({
-  "duration": 1519521947,
+  "duration": 620187039,
   "status": "passed"
 });
 formatter.match({
@@ -241,7 +241,7 @@ formatter.match({
   "location": "Test.select_the_service_center(String)"
 });
 formatter.result({
-  "duration": 5231711134,
+  "duration": 4625207535,
   "status": "passed"
 });
 });

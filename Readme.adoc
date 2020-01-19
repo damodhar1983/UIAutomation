@@ -26,6 +26,13 @@ clone the repository from the below git url and store in local system.
 
 https://github.com/damodhar1983/techtest.git
 
+Location of the automation scripts :
+project location = the location of the project on your local system
+projectlocation\techtest\src\test\java
+Feature file path : projectlocation\techtest\src\test\java\features\servicecenterlocation.feature
+Runner file path : projectlocation\techtest\src\test\java\runner\Testrunner.java
+Step Definition path: projectlocation\techtest\src\test\java\seleniumgluecode\Test.java
+
 1.Open  command prompt
 
 2.Open the command prompt and cd(change directory) until the project root directory.
@@ -38,3 +45,8 @@ run the following command in the command prompt:
   mvn test
 
 4.You would notice  that Testrunner file is executed.
+
+## Reports
+
+To check the reports Navigate to the below path
+Go to Target-->htmlreports-->index.html

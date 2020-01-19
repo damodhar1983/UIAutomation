@@ -1,0 +1,34 @@
+#Project Title
+
+techtest
+
+## Framework , tools and coding language used.
+
+Programming Langugage :Java
+
+Framework :BDD Framework
+Automation tool : Selenium
+Build tool: Maven
+
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine .
+
+## Prerequisites
+
+Install java ,Maven , IDE( Eg. eclipse)
+
+## Running the tests
+
+1.Open  command prompt
+
+2.Open the command prompt and cd until the project root directory.
+
+3.Since it’s a Maven project and  have added Cucumber in test scope dependency and all features are also added in src/test packages,
+
+
+run the following command in the command prompt: 
+
+  mvn test
+
+4.You would notice  that Testrunner file is executed.

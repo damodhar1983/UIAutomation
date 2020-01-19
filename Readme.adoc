@@ -26,9 +26,10 @@ clone the repository from the below git url and store in local system.
 
 https://github.com/damodhar1983/techtest.git
 
-Location of the automation scripts :
 
 project location = the location of the project on your local system
+
+Location of the automation scripts :
 
 projectlocation\techtest\src\test\java
 

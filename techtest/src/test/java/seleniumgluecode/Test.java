@@ -1,4 +1,6 @@
 package seleniumgluecode;
+
+
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -14,20 +16,22 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 
+
 public class Test {
     public static WebDriver driver;
-    @Given("^user is on homepage$")
-    public void user_is_on_homepage() throws Throwable {     
+    @Given("^navigate to nsw service center url$")
+    public void navigate_to_nsw_service_center() throws Throwable {     
     	System.setProperty("webdriver.chrome.driver","C:\\Users\\Damu\\chromedriver.exe");
     	driver=new ChromeDriver();
     	driver.manage().window().maximize();
 //    	implicit wait
     	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     	driver.get("https://www.service.nsw.gov.au/");
+    	
     }
     
-    @When("^user navigates to Login Page$")
-    public void user_navigates_to_Login_Page() throws Throwable {
+    @When("^Search for Apply for a number plate$")
+    public void search_for_apply_for_numberplate() throws Throwable {
     	//Explicitwait
     	WebDriverWait webdriverwait=new WebDriverWait(driver,10);
     	webdriverwait.until(ExpectedConditions.visibilityOfElementLocated(By.name("q")));
@@ -38,26 +42,45 @@ public class Test {
     	//click on the required link
     	WebElement numberplate = driver.findElement(By.linkText("Apply for a number plate"));
     	numberplate.click();
-    }
+    	String actualtitle=driver.getTitle();    	
+    	String expectedtitle="Apply for a number plate | Service NSW";
+    	if(actualtitle.equalsIgnoreCase(expectedtitle))
+			System.out.println("Title Matched");
+		else {
+			System.out.println("Title didn't match");
+		}
+			
+		}
+			
+    	
+    	
     
-    @When("^user enters username and Password$")
-    public void user_enters_username_and_Password() throws Throwable {
+    @When("^Click on Locate us button$")
+    public void click_on_locate_button() throws Throwable {
     	//click on find locations    	
     	WebElement findlocationslink = driver.findElement(By.linkText("Find locations"));
-    	findlocationslink.click();
+    	findlocationslink.click();    	
     	
+    }
+    @When("^Enter suburb Sydney 2000$")
+    public void enter_suburb_sydney() throws Throwable {
     	//Enter Suburb
     	WebElement locatortext = driver.findElement(By.id("locatorTextSearch"));
     	locatortext.sendKeys("Sydney 2000");
-    	locatortext.sendKeys(Keys.ENTER);
-
-    	//click on  required service center    	
-    	WebElement servicecenter = driver.findElement(By.linkText("Marrickville Service Centre"));
-    	servicecenter.click();  
-    }
+    	locatortext.sendKeys(Keys.ENTER);    	 
+    }    
     
-    @Then("^success message is displayed$")
-    public void success_message_is_displayed() throws Throwable {
-    	 
-    }      
+    @Then("^Select the service center ([^\"]*)e$")
+    public void select_the_service_center(String servicecenter) throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+    	//click on  required service center
+    	String requiredservicecenter=servicecenter + "e";
+    	System.out.println(requiredservicecenter);
+    	WebDriverWait webdriverwait=new WebDriverWait(driver,10);
+    	webdriverwait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText(requiredservicecenter)));
+    	WebElement servicecenterelement = driver.findElement(By.linkText(requiredservicecenter));
+    	servicecenterelement.click(); 
+    };
+    
+       
 }

@@ -55,10 +55,13 @@ Once the Exeuction is completed Refresh the project
 
 We will get two type of reports after the execution
 ## Cucumber HTML Reports:
+
 To check the HTML reports Navigate to the below path
+
 Go to project folder -->Target-->htmlreports-->index.html
 
 ## Cucumber Extent Reports:
+
 Go to project folder -->target --> cucumber-reports --> report.html
 
 ## Data Driven 

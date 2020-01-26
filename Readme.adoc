@@ -29,13 +29,13 @@ project location = the location of the project on your local system
 
 Location of the automation scripts :
 
-projectlocation\techtest\src\test\java
+projectlocation\src\test\java
 
-Feature file path : projectlocation\techtest\src\test\java\features\servicecenterlocation.feature
+Feature file path : projectlocation\src\test\java\features\
 
-Runner file path : projectlocation\techtest\src\test\java\runner\Testrunner.java
+Runner file path : projectlocation\src\test\java\runner\
 
-Step Definition path: projectlocation\techtest\src\test\java\seleniumgluecode\Test.java
+Step Definition path: projectlocation\src\test\java\seleniumgluecode\
 
 1.Open  command prompt
 

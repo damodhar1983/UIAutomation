@@ -24,7 +24,6 @@ Install java ,Maven , IDE( Eg. eclipse)
 
 clone the repository  and store in local system.
 
-
 project location = the location of the project on your local system
 
 Location of the automation scripts :
@@ -66,6 +65,8 @@ Go to project folder -->Target-->htmlreports-->index.html
 Go to project folder -->target --> cucumber-reports --> report.html
 
 ## Data Driven 
+
 ## The suite can be executed for multiple sets of data
+
 Provide the required data in the examples section of the feature file.Once data is added run the Testrunner. 
 The automation suite will be executed for multiple sets of data.

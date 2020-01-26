@@ -1,4 +1,4 @@
-#Project Title
+##Project Title
 
 UI Automation
 
@@ -22,9 +22,7 @@ Install java ,Maven , IDE( Eg. eclipse)
 
 ## Running the tests
 
-clone the repository from the below git url and store in local system.
-
-https://github.com/damodhar1983/techtest.git
+clone the repository  and store in local system.
 
 
 project location = the location of the project on your local system
@@ -64,6 +62,6 @@ Go to project folder -->Target-->htmlreports-->index.html
 Go to project folder -->target --> cucumber-reports --> report.html
 
 ## Data Driven 
-# The suite can be executed for multiple sets of data
+## The suite can be executed for multiple sets of data
 Provide the required data in the examples section of the feature file.Once data is added run the Testrunner. 
 The automation suite will be executed for multiple sets of data.

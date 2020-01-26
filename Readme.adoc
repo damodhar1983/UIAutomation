@@ -1,12 +1,12 @@
 #Project Title
 
-techtest
+UI Automation
 
 ## Framework , tools and coding language used.
 
 Programming Langugage :Java
 
-Framework :BDD Framework
+Framework :BDD Framework ,Data Driven
 
 Automation tool : Selenium
 
@@ -53,6 +53,17 @@ run the following command in the command prompt:
 4.You would notice  that Testrunner file is executed.
 
 ## Reports
+Once the Exeuction is completed Refresh the project 
 
-To check the reports Navigate to the below path
-Go to Target-->htmlreports-->index.html
+We will get two type of reports after the execution
+## Cucumber HTML Reports:
+To check the HTML reports Navigate to the below path
+Go to project folder -->Target-->htmlreports-->index.html
+
+## Cucumber Extent Reports:
+Go to project folder -->target --> cucumber-reports --> report.html
+
+## Data Driven 
+# The suite can be executed for multiple sets of data
+Provide the required data in the examples section of the feature file.Once data is added run the Testrunner. 
+The automation suite will be executed for multiple sets of data.

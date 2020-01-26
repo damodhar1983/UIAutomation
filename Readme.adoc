@@ -54,6 +54,7 @@ run the following command in the command prompt:
 Once the Exeuction is completed Refresh the project 
 
 We will get two type of reports after the execution
+
 ## Cucumber HTML Reports:
 
 To check the HTML reports Navigate to the below path

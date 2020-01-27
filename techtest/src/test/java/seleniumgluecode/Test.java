@@ -24,7 +24,7 @@ public class Test {
     
     @Given("^navigate to nsw service center \"([^\"]*)\"$")
     public void navigate_to_nsw_service_center(String URL) throws Throwable {     
-    	System.setProperty("webdriver.chrome.driver","C:\\Users\\Damu\\chromedriver.exe");
+    	System.setProperty("webdriver.chrome.driver",".\\chromedriver.exe");
     	driver=new ChromeDriver();
     	driver.manage().window().maximize();
 //    	implicit wait

@@ -79,6 +79,8 @@ Go to project folder -->target --> cucumber-reports --> report.html
 
 ## The suite can be executed for multiple sets of data
 
-Provide the required data in the examples section of the feature file.Once data is added run the Testrunner. 
+Provide the required data in the examples section of the feature file(projectlocation\src\test\java\features\).
+
+Once data is added run the Testrunner. 
 
 The automation suite will be executed for multiple sets of data.

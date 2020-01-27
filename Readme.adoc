@@ -16,11 +16,11 @@ Build tool: Maven
 
 These instructions will get you a copy of the project up and running on your local machine .
 
-## Prerequisites
+### Prerequisites
 
 Install java ,Maven , IDE( Eg. eclipse)
 
-## Running the tests
+### Running the tests
 
 clone the repository  and store in local system.
 
@@ -65,19 +65,19 @@ Once the Exeuction is completed Refresh the project
 
 We will get two type of reports after the execution
 
-## Cucumber HTML Reports:
+### Cucumber HTML Reports:
 
 To check the HTML reports Navigate to the below path
 
 Go to project folder -->Target-->htmlreports-->index.html
 
-## Cucumber Extent Reports:
+### Cucumber Extent Reports:
 
 Go to project folder -->target --> cucumber-reports --> report.html
 
 ## Data Driven 
 
-## The suite can be executed for multiple sets of data
+### The suite can be executed for multiple sets of data
 
 Provide the required data in the examples section of the feature file(projectlocation\src\test\java\features\).
 

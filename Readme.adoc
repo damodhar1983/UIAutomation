@@ -4,7 +4,7 @@ UI Automation
 
 ## Framework , tools and coding language used.
 
-Programming Langugage :Java
+Programming Language :Java
 
 Framework :BDD Framework ,Data Driven
 
@@ -36,9 +36,20 @@ Runner file path : projectlocation\src\test\java\runner\
 
 Step Definition path: projectlocation\src\test\java\seleniumgluecode\
 
+# change the chrome driver path:
+
+open the project in any IDE(example: eclipse).
+
+Navigate to the step Definition path (projectlocation\src\test\java\seleniumgluecode\Test.java
+
+Update the chrome driver path as per your local system.
+
+System.setProperty("webdriver.chrome.driver","C:\\Users\\Damu\\chromedriver.exe");
+
+
 1.Open  command prompt
 
-2.Open the command prompt and cd(change directory) until the project root directory.
+2.Open the command prompt and cd(change directory) until the project root directory.( change directory till  the folder where pom.xml exists )
 
 3.Since it’s a Maven project and  have added Cucumber in test scope dependency and all features are also added in src/test packages,
 

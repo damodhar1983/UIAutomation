@@ -36,16 +36,22 @@ Runner file path : projectlocation\src\test\java\runner\
 
 Step Definition path: projectlocation\src\test\java\seleniumgluecode\
 
-### change the chrome driver path:
+### ------------------------------------------------
+
+### changing the chrome driver path is optional:
 
 open the project in any IDE(example: eclipse).
 
-Navigate to the step Definition path (projectlocation\src\test\java\seleniumgluecode\Test.java
+I have uploaded the chromedriver to the repository. The runner class will pick the chromedriver which is in the project folder itself.
+
+You can change the path of the chromedriver if you like to or else not required.
+Navigate to the step Definition path (projectlocation\src\test\java\seleniumgluecode\Test.java)
 
 Update the chrome driver path as per your local system.
 
-System.setProperty("webdriver.chrome.driver","C:\\Users\\Damu\\chromedriver.exe");
+System.setProperty("webdriver.chrome.driver",".\\chromedriver.exe"); 
 
+### ------------------------------------------------
 
 1.Open  command prompt
 
